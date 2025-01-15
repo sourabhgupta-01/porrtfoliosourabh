@@ -142,19 +142,17 @@ li a:hover {
     margin-top: 5px;
 }
 
-
 .main-box {
     border: 2px solid #23304d;
     height: 100px;
     width: 400px;
     margin-left: 200px;
-    padding-top: 50px;
+    padding-top: 10px;
     margin-top: 50px;
     background-color: #23304d;
     color: white;
 
 }
-
 .main-box1 {
 
     height: 300px;
@@ -172,8 +170,32 @@ li a:hover {
 
 .span-me {
     color: #c92727;
+    animation: move 6s steps(4) infinite;
+    animation:type 1.5s steps(10) infinite;
 }
+/* .main-box span:after{
+    content:'';
+    position:absoluate;
+    left:0;
+    height:100px;
+    width:100%;
+    background: #343f4f;
+    border-left:2px solid #01fe87;
+    animation:type 1.5s steps(10) infinite;
 
+} */
+@keyframes move{
+    100%{
+        top:180px;
+
+    }
+}
+@keyframes type{
+    100%{
+        left:100%;
+        margin:0 -35px 0 35px;
+    }
+}
 .main-box1 img {
     border-radius: 100%;
     width: 300px;
@@ -400,7 +422,9 @@ p {
     font-size: 16px bold;
     text-align: center;
     padding-top: 10px;
+
 }
+
 
 .skil-box {
     height: 450px;
@@ -411,6 +435,13 @@ p {
     flex-wrap: wrap;
     box-shadow: 10px 10px 15px rgb(18, 2, 43);
 
+    transition:0.5s ease;
+
+}
+.skil-box:hover{
+    background-color: #271e50;
+    box-shadow: 0 4px 6px 1px,
+                0 1px 3px 0.5px;  
 }
 
 .skil-box1 {
@@ -420,8 +451,9 @@ p {
     margin: 40px;
     border-radius: 20px;
     box-shadow: 10px 10px 10px rgb(17, 5, 32);
-
+  
 }
+
 
 .skil-box1 img {
     height: 50px;
@@ -487,8 +519,10 @@ p {
     background-color: rgb(255, 255, 255);
     margin-left: 200px;
     border-radius: 10px;
+    
 
 }
+
 
 .edu-img1 {
     height: 150px;
@@ -499,8 +533,13 @@ p {
     background-size: cover;
     box-shadow: 10px 10px 10px;
     border-radius: 15px;
+    transition:0.5s ease;
 }
-
+.edu-img1:hover{
+    background-color: #fff3f3;
+    box-shadow: 0 4px 9px 0px,
+                0 1px 9px 0.5px; 
+}
 .edu-img2 {
     height: 150px;
     width: 200px;
@@ -510,8 +549,13 @@ p {
     background-size: cover;
     box-shadow: 10px 10px 10px;
     border-radius: 15px;
+    transition:0.5s ease;
 }
-
+.edu-img2:hover{
+    background-color: #fff3f3;
+    box-shadow: 0 4px 9px 0px,
+                0 1px 9px 0.5px; 
+}
 .edu-img3 {
     height: 150px;
     width: 200px;
@@ -521,8 +565,13 @@ p {
     background-size: cover;
     box-shadow: 10px 10px 10px;
     border-radius: 15px;
+    transition:0.5s ease;
 }
-
+.edu-img3:hover{
+    background-color: #fff3f3;
+    box-shadow: 0 4px 9px 0px,
+                0 1px 9px 0.5px; 
+}
 .edu-box1 {
     height: 147px;
     width: 700px;
@@ -531,9 +580,14 @@ p {
     margin-left: 202px;
     border-radius: 10px;
     box-shadow: 10px 10px 10px;
+    transition:0.5s ease;
 
 }
-
+.edu-box1:hover{
+    background-color: #918ea0;
+    box-shadow: 0 4px 6px 1px,
+                0 1px 3px 0.5px;  
+}
 /* Responsive styles */
 @media (max-width: 768px) {
     .edu {
@@ -611,6 +665,12 @@ p {
     width: 350px;
     border-radius: 30px;
     box-shadow: 10px 15px 20px black;
+    transition:0.5s ease;
+}
+.project-box img:hover{
+    background-color: #fff3f3;
+    box-shadow: 0 4px 9px 0px,
+                0 1px 9px 0.5px; 
 }
  
 /* Responsive styles */
@@ -696,7 +756,13 @@ p {
     padding: 10px;
     margin-left: 10px;
     margin-top: 0px;
+    /* transition:0.5s ease; */
 }
+/* .cnt-box2 :hover{
+    background-color: #fff3f3;
+    box-shadow: 0 4px 9px 0px,
+                0 1px 9px 0.5px; 
+} */
 
 input {
     width: 450px;
